@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Centro -->
+    <TextView
+        android:id="@+id/txt0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="•"
+        android:textSize="40sp" />
+
+    <!-- Norte -->
+    <TextView
+        android:id="@+id/txtNorte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="NORTE"
+        android:textSize="40sp"
+        android:layout_marginBottom="50dp" />
+
+    <!-- Sur -->
+    <TextView
+        android:id="@+id/txtSur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="SUR"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp" />
+
+    <!-- Este -->
+    <TextView
+        android:id="@+id/txtEste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt0"
+        android:layout_centerVertical="true"
+        android:text="ESTE"
+        android:textSize="40sp"
+        android:layout_marginLeft="60dp" />
+
+    <!-- Oeste -->
+    <TextView
+        android:id="@+id/txtOeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txt0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="OESTE"
+        android:textSize="40sp"
+        android:layout_marginRight="60dp" />
+
+</RelativeLayout>

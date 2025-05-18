@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_linearlayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout Compose"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Table Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_absolutelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Absolute Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_scrollviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollView Layout"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
