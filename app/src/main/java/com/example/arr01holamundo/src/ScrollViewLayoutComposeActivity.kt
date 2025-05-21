@@ -1,6 +1,7 @@
 package com.example.arr01holamundo.src
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -10,6 +11,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
@@ -25,6 +27,10 @@ class ScrollViewLayoutComposeActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ScrollViewContent() {
+    var textFieldValue by remember { mutableStateOf("") }
+    var toggleButtonState by remember { mutableStateOf(false) }
+    val context = LocalContext.current
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -33,8 +39,8 @@ fun ScrollViewContent() {
     ) {
         // EditText
         OutlinedTextField(
-            value = "",
-            onValueChange = { },
+            value = textFieldValue,
+            onValueChange = { textFieldValue = it },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp),
@@ -46,7 +52,9 @@ fun ScrollViewContent() {
 
         // Button
         Button(
-            onClick = { },
+            onClick = { 
+                Toast.makeText(context, "Ingresaste: $textFieldValue", Toast.LENGTH_SHORT).show()
+            },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
@@ -58,12 +66,16 @@ fun ScrollViewContent() {
 
         // ToggleButton
         Button(
-            onClick = { },
+            onClick = { 
+                toggleButtonState = !toggleButtonState
+                val mensaje = if (toggleButtonState) "Encendido" else "Apagado"
+                Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show()
+            },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         ) {
-            Text("OFF")
+            Text(if (toggleButtonState) "ON" else "OFF")
         }
 
         Spacer(modifier = Modifier.height(8.dp))
