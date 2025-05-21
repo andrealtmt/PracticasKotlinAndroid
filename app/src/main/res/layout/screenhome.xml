@@ -27,10 +27,24 @@
         android:layout_marginBottom="8dp" />
 
     <Button
+        android:id="@+id/btn_relativelayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout Compose"
+        android:layout_marginBottom="8dp" />
+
+    <Button
         android:id="@+id/btn_tablelayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Table Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_tablelayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Table Layout Compose"
         android:layout_marginBottom="8dp" />
 
     <Button
@@ -41,6 +55,13 @@
         android:layout_marginBottom="8dp" />
 
     <Button
+        android:id="@+id/btn_framelayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame Layout Compose"
+        android:layout_marginBottom="8dp" />
+
+    <Button
         android:id="@+id/btn_absolutelayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,10 +69,24 @@
         android:layout_marginBottom="8dp" />
 
     <Button
+        android:id="@+id/btn_absolutelayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Absolute Layout Compose"
+        android:layout_marginBottom="8dp" />
+
+    <Button
         android:id="@+id/btn_scrollviewlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ScrollView Layout"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_scrollviewlayoutCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollView Layout Compose"
         android:layout_marginBottom="8dp" />
 
 </LinearLayout>

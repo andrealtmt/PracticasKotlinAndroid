@@ -26,25 +26,40 @@ class MainActivity : ComponentActivity() {
         findViewById<Button>(R.id.btn_relativelayout).setOnClickListener {
             startActivity(Intent(this, RelativeLayoutActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_relativelayoutCompose).setOnClickListener {
+            startActivity(Intent(this, RelativeLayoutComposeActivity::class.java))
+        }
 
         // Table Layout
         findViewById<Button>(R.id.btn_tablelayout).setOnClickListener {
             startActivity(Intent(this, TableLayoutActivity::class.java))
+        }
+        findViewById<Button>(R.id.btn_tablelayoutCompose).setOnClickListener {
+            startActivity(Intent(this, TableLayoutComposeActivity::class.java))
         }
 
         // Frame Layout
         findViewById<Button>(R.id.btn_framelayout).setOnClickListener {
             startActivity(Intent(this, FrameLayoutActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_framelayoutCompose).setOnClickListener {
+            startActivity(Intent(this, FrameLayoutComposeActivity::class.java))
+        }
 
         // Absolute Layout
         findViewById<Button>(R.id.btn_absolutelayout).setOnClickListener {
             startActivity(Intent(this, AbsoluteLayoutActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_absolutelayoutCompose).setOnClickListener {
+            startActivity(Intent(this, AbsoluteLayoutComposeActivity::class.java))
+        }
 
         // ScrollView Layout
         findViewById<Button>(R.id.btn_scrollviewlayout).setOnClickListener {
             startActivity(Intent(this, ScrollViewLayoutActivity::class.java))
+        }
+        findViewById<Button>(R.id.btn_scrollviewlayoutCompose).setOnClickListener {
+            startActivity(Intent(this, ScrollViewLayoutComposeActivity::class.java))
         }
 
         // comentario de una línea
