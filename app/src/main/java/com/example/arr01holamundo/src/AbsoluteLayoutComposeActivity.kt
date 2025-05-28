@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.layout.layout
+import androidx.compose.ui.tooling.preview.Preview
 
 class AbsoluteLayoutComposeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class AbsoluteLayoutComposeActivity : ComponentActivity() {
         }
     }
 }
-
+@Preview
 @Composable
 fun AbsoluteLayoutScreen() {
     Box(modifier = Modifier.fillMaxSize()) {
